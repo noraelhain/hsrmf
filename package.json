@@ -2,12 +2,15 @@
   "name": "progect-graduation",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://noraelhain.github.io/hsrmf",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -43,7 +46,7 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.56",
+    "@types/react": "^17.0.83",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.18",
